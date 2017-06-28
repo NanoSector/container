@@ -18,15 +18,12 @@ class ComponentContainer implements ContainerInterface
 	protected $storedComponents = [];
 
 	/**
-	 * @param object $object
+	 * @param ComponentInterface $object $object
 	 *
 	 * @throws ContainerException
 	 */
-	public function add(object $object)
+	public function add(ComponentInterface $object)
 	{
-		if (!($object instanceof ComponentInterface))
-			throw new ContainerException('Object must implement Yoshi2889\Container\ComponentInterface');
-
 		$this->storedComponents[get_class($object)] = $object;
 	}
 

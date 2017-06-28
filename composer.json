@@ -9,7 +9,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Yoshi2889\\Container\\": "src/"
+            "Yoshi2889\\Container\\": "src/",
+            "Yoshi2889\\Container\\Tests\\": "tests/"
         }
     },
     "authors": [
