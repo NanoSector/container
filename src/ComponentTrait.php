@@ -13,22 +13,16 @@ trait ComponentTrait
 	/**
 	 * @param ComponentContainer $container
 	 *
-	 * @return null|object
+	 * @return static
+	 * @throws NotFoundException
 	 */
 	public static function fromContainer(ComponentContainer $container)
 	{
-		try
-		{
-			$obj = $container->get(__CLASS__);
+		$obj = $container->get(__CLASS__);
 
-			if ($obj && $obj instanceof static)
-				return $obj;
+		if ($obj && $obj instanceof static)
+			return $obj;
 
-			return null;
-		}
-		catch (NotFoundException $e)
-		{
-			return null;
-		}
+		throw new NotFoundException();
 	}
 }
