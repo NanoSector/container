@@ -22,13 +22,24 @@ class ComponentContainerTest extends TestCase
 
 		self::assertInstanceOf(\Yoshi2889\Container\Tests\SampleComponent::class, $sampleComponentFromContainer);
 		self::assertEquals($sampleComponent, $sampleComponentFromContainer);
+	}
 
+	public function testGetInvalidComponent()
+	{
+		$container = new ComponentContainer();
 		$this->expectException(\Yoshi2889\Container\NotFoundException::class);
 		$container->get(\Yoshi2889\Container\Tests\SampleInvalidComponent::class);
+	}
 
+	public function testGetInvalidType()
+	{
+		$container = new ComponentContainer();
 		$this->expectException(\Yoshi2889\Container\ContainerException::class);
 		$container->get(10);
+	}
 
+	public function testGetNotFound()
+	{
 		$emptyContainer = new ComponentContainer();
 		self::assertNull(\Yoshi2889\Container\Tests\SampleComponent::fromContainer($emptyContainer));
 	}
