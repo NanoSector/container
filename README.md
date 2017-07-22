@@ -1,6 +1,7 @@
 # PSR-11 Object container
-[![Build Status](https://scrutinizer-ci.com/g/Yoshi2889/container/badges/build.png?b=3.0)](https://scrutinizer-ci.com/g/Yoshi2889/container/build-status/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Yoshi2889/container/badges/quality-score.png?b=3.0)](https://scrutinizer-ci.com/g/Yoshi2889/container/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/Yoshi2889/container/badges/build.png)](https://scrutinizer-ci.com/g/Yoshi2889/container/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Yoshi2889/container/badges/quality-score.png)](https://scrutinizer-ci.com/g/Yoshi2889/container/?branch=master)
+[![Scrutinizer Code Coverage](https://scrutinizer-ci.com/g/Yoshi2889/container/badges/coverage.png)](https://scrutinizer-ci.com/g/Yoshi2889/container/code-structure/master/code-coverage)
 [![Latest Stable Version](https://poser.pugx.org/yoshi2889/container/v/stable)](https://packagist.org/packages/yoshi2889/container)
 [![Latest Unstable Version](https://poser.pugx.org/yoshi2889/container/v/unstable)](https://packagist.org/packages/yoshi2889/container)
 [![Total Downloads](https://poser.pugx.org/yoshi2889/container/downloads)](https://packagist.org/packages/yoshi2889/container)
