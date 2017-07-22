@@ -41,7 +41,8 @@ class ComponentContainerTest extends TestCase
 	public function testGetNotFound()
 	{
 		$emptyContainer = new ComponentContainer();
-		self::assertNull(\Yoshi2889\Container\Tests\SampleComponent::fromContainer($emptyContainer));
+		$this->expectException(\Yoshi2889\Container\NotFoundException::class);
+		\Yoshi2889\Container\Tests\SampleComponent::fromContainer($emptyContainer);
 	}
 
 	public function testContainerHas()
