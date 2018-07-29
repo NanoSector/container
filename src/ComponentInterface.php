@@ -9,12 +9,14 @@
 namespace Yoshi2889\Container;
 
 
+use Psr\Container\ContainerInterface;
+
 interface ComponentInterface
 {
 	/**
-	 * @param ComponentContainer $container
+	 * @param ContainerInterface $container
 	 *
 	 * @return null|object
 	 */
-	public static function fromContainer(ComponentContainer $container);
+	public static function fromContainer(ContainerInterface $container);
 }

@@ -9,25 +9,27 @@
 namespace Yoshi2889\Container;
 
 
+use Psr\Container\ContainerInterface;
+
 trait ContainerTrait
 {
 	/**
-	 * @var ComponentContainer
+	 * @var ContainerInterface
 	 */
 	protected $container;
 
 	/**
-	 * @return ComponentContainer
+	 * @return ContainerInterface
 	 */
-	public function getContainer(): ComponentContainer
+	public function getContainer(): ContainerInterface
 	{
 		return $this->container;
 	}
 
 	/**
-	 * @param ComponentContainer $container
+	 * @param ContainerInterface $container
 	 */
-	public function setContainer(ComponentContainer $container)
+	public function setContainer(ContainerInterface $container)
 	{
 		$this->container = $container;
 	}

@@ -8,15 +8,17 @@
 
 namespace Yoshi2889\Container;
 
+use Psr\Container\ContainerInterface;
+
 trait ComponentTrait
 {
 	/**
-	 * @param ComponentContainer $container
+	 * @param ContainerInterface $container
 	 *
 	 * @return static
 	 * @throws NotFoundException
 	 */
-	public static function fromContainer(ComponentContainer $container)
+	public static function fromContainer(ContainerInterface $container)
 	{
 		$obj = $container->get(__CLASS__);
 
