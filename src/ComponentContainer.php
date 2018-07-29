@@ -24,7 +24,12 @@ class ComponentContainer implements ContainerInterface
 	 */
 	public function add(ComponentInterface $object)
 	{
-		$this->storedComponents[get_class($object)] = $object;
+	    $id = get_class($object);
+
+	    if ($this->has($id))
+	        throw new ContainerException('A class with ID ' . $id . ' already exists in this container.');
+
+		$this->storedComponents[$id] = $object;
 	}
 
 	/**
@@ -43,6 +48,7 @@ class ComponentContainer implements ContainerInterface
 
 	/**
 	 * @inheritdoc
+     * @throws ContainerException
 	 */
 	public function has($id)
 	{
