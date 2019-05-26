@@ -1,27 +1,30 @@
 {
-    "name": "yoshi2889/container",
-    "description": "Simple PSR-11 Container implementation for storing object instances",
-    "type": "library",
-    "license": "MIT",
-    "require": {
-        "php": ">=7.1.0",
-        "psr/container": "^1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Yoshi2889\\Container\\": "src/",
-            "Yoshi2889\\Container\\Tests\\": "tests/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Yoshi2889",
-            "email": "rick.2889@gmail.com",
-            "homepage": "https://nanosector.nl",
-            "role": "Lead Developer"
-        }
-    ],
-    "require-dev": {
-        "phpunit/phpunit": "^6.2"
+  "name": "yoshi2889/container",
+  "description": "Simple PSR-11 Container implementation for storing object instances",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "NanoSector",
+      "email": "rick@nanosector.nl"
     }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "psr/container": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Yoshi2889\\Container\\": "src/",
+      "Yoshi2889\\Container\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  },
+  "config": {
+    "platform": {
+      "php": "7.2.0"
+    }
+  }
 }
